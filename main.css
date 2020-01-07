@@ -1,0 +1,11 @@
+* { margin:0; 
+    padding:0; }
+
+div {
+    /* margin: 5px; */
+}
+
+.spaceBottomLeft{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}

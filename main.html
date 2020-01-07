@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="spaceBottomLeft">
+        <h1>A Store System</h1>
+    </header>
+
+    <main>
+        <div class="spaceBottomLeft">
+            <h3>Customer CRUD</h3>
+                <div>
+                    <label for="say">Customer ID Number</label>
+                    <input name="id" id="customerId" value="test">
+                </div>
+                <div>
+                    <label for="say">First Name</label>
+                    <input name="firstName" id="customerFirstName" value="test">
+                </div>
+                <div>
+                    <label for="to">Last Name</label>
+                    <input name="lastName" id="customerLastName" value="test">
+                </div>
+                <div>
+                    <label for="to">Phone Number</label>
+                    <input name="phoneNumber" id="customerPhoneNumber" value="test">
+                </div>
+                <div>
+                    <label for="to">Address</label>
+                    <input name="address" id="customerAddress" value="test">
+                </div>
+                <div>
+                    <button onclick="addCustomer()">Create Customer</button><br>
+                    <button onclick="getCustomer()">Get Customer</button ><br>
+                    <button onclick="getAllCustomers()">Get All Customer</button><br>
+                    <button onclick="updateCustomer()">Update Customer</button><br>
+                    <button onclick="deleteCustomer()">Delete Customer</button><br>
+                </div>
+        </div>
+        <div class="spaceBottomLeft">
+            <h3>Product CRUD</h3>
+            <div>
+                <label for="to">Product Id</label>
+                <input name="id" id="id" value="">
+            </div>
+            <div>
+                <label for="to">Product Name</label>
+                <input name="name" id="name" value="">
+            </div>
+            <div>
+                <label for="to">Sale Price</label>
+                <input name="salePrice" id="salePrice" value="">
+            </div>
+            <div>
+                <button>Create Product</button><br>
+                <button>Get Product</button><br>
+                <button>Get All Product</button><br>
+                <button>Update Product</button><br>
+                <button>Delete Product</button><br>
+            </div>
+        </div>
+        <div class="spaceBottomLeft">
+            <h3>Transaction CRUD</h3>
+            <div>
+                <label for="to">Transaction Id</label>
+                <input name="id" id="id" value="">
+            </div>
+            <div>
+                <label for="to">Date Time of Transaction</label>
+                <input name="dateTime" id="dateTime" value="">
+            </div>
+            <div>
+                <label for="to">Customer Associated with Transaction</label>
+                <input name="customerId" id="salePrice" value="">
+            </div>
+            <div>
+                <button>Create Transaction</button><br>
+                <button>Get Transaction</button><br>
+                <button>Get All Transactions</button><br>
+                <button>Update Transaction</button><br>
+                <button>Delete Transaction</button><br>
+            </div>
+            
+        </div>
+        
+    </main>
+
+    <footer></footer>
+    
+    <script src="customerCrud.js"></script>
+</body>
+</html>
