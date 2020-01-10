@@ -47,44 +47,48 @@
             <h3>Product CRUD</h3>
             <div>
                 <label for="to">Product Id</label>
-                <input name="id" id="id" value="">
+                <input name="productId" id="productId" value="P1">
             </div>
-            <div>
+            <div> 
                 <label for="to">Product Name</label>
-                <input name="name" id="name" value="">
+                <input name="name" id="productName" value="Product">
             </div>
             <div>
                 <label for="to">Sale Price</label>
-                <input name="salePrice" id="salePrice" value="">
+                <input name="salePrice" id="productSalePrice" value="1">
             </div>
             <div>
-                <button>Create Product</button><br>
-                <button>Get Product</button><br>
-                <button>Get All Product</button><br>
-                <button>Update Product</button><br>
-                <button>Delete Product</button><br>
+                <button onclick="addProduct()">Create Product</button><br>
+                <button onclick="getOneProduct()">Get Product</button><br>
+                <button onclick="getAllProducts()">Get All Product</button><br>
+                <button onclick="updateProduct()">Update Product</button><br>
+                <button onclick="deleteProduct()">Delete Product</button><br>
             </div>
         </div>
         <div class="spaceBottomLeft">
             <h3>Transaction CRUD</h3>
             <div>
                 <label for="to">Transaction Id</label>
-                <input name="id" id="id" value="">
+                <input name="transactionId" id="transactionId" value="T1">
             </div>
             <div>
                 <label for="to">Date Time of Transaction</label>
-                <input name="dateTime" id="dateTime" value="">
+                <input name="" id="transactionDateTime" value="">
             </div>
             <div>
                 <label for="to">Customer Associated with Transaction</label>
-                <input name="customerId" id="salePrice" value="">
+                <input name="" id="customerId" value="C1">
             </div>
             <div>
-                <button>Create Transaction</button><br>
-                <button>Get Transaction</button><br>
-                <button>Get All Transactions</button><br>
+                <label for="to">Product to be added to Transaction</label>
+                <input name="" id="product" value="">
+            </div>
+            <div>
+                <button onclick="addTransaction()">Create Transaction</button><br>
+                <button onclick="getTransaction()">Get Transaction</button onclick="addTransaction()"><br>
+                <button onclick="getAllTransactions()">Get All Transactions</button onclick="addTransaction()"><br>
                 <button>Update Transaction</button><br>
-                <button>Delete Transaction</button><br>
+                <button onclick="deleteTransaction()">Delete Transaction</button onclick="getAllTransactions()"><br>
             </div>
             
         </div>
@@ -94,5 +98,7 @@
     <footer></footer>
     
     <script src="customerCrud.js"></script>
+    <script src="productCrud.js"></script>
+    <script src="transactionCrud.js"></script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-console.log("customerCrud reached")
 
 function getInputValues(){
   let customerId = document.querySelector("#customerId").value 
@@ -65,9 +64,9 @@ function addCustomer(){
 function getCustomer(){
   console.log("getCustomer funciton reached")
 
-  document.querySelector("#customerId").addEventListener("click", function(event){
-    event.preventDefault()
-  });
+  // document.querySelector("#customerId").addEventListener("click", function(event){
+  //   event.preventDefault()
+  // });
 
   makeIdFetch(url)
 }
