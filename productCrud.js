@@ -7,10 +7,10 @@ function addProduct(){
   let productSalePrice = document.querySelector("#productSalePrice").value 
 
   const dataObject = {
-      id: productId,
+      // id: productId,
       name: productName,
       salePrice: productSalePrice,
-      transaction_transaction_id: 2
+      // transaction_transaction_id: 2
   };
 
   const url = "http://localhost:8080/products/"

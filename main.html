@@ -17,23 +17,23 @@
             <h3>Customer CRUD</h3>
                 <div>
                     <label for="say">Customer ID Number</label>
-                    <input name="id" id="customerId" value="test">
+                    <input name="id" id="customerId" value="C1">
                 </div>
                 <div>
                     <label for="say">First Name</label>
-                    <input name="firstName" id="customerFirstName" value="test">
+                    <input name="firstName" id="customerFirstName" value="John">
                 </div>
                 <div>
                     <label for="to">Last Name</label>
-                    <input name="lastName" id="customerLastName" value="test">
+                    <input name="lastName" id="customerLastName" value="Doe">
                 </div>
                 <div>
                     <label for="to">Phone Number</label>
-                    <input name="phoneNumber" id="customerPhoneNumber" value="test">
+                    <input name="phoneNumber" id="customerPhoneNumber" value="5135824441">
                 </div>
                 <div>
                     <label for="to">Address</label>
-                    <input name="address" id="customerAddress" value="test">
+                    <input name="address" id="customerAddress" value="123 Main St.">
                 </div>
                 <div>
                     <button onclick="addCustomer()">Create Customer</button><br>
@@ -67,6 +67,16 @@
         </div>
         <div class="spaceBottomLeft">
             <h3>Transaction CRUD</h3>
+            <div class="border">
+                <label>Product Id be added to Transaction</label>
+                <input name="" id="addProductId" value="">
+                <label>Quantity of Product</label>
+                <input name="" id="addProductQuantity" value="">
+                <button onclick="addToProductsToBeAdded()">Add Product</button><br>
+            </div>
+            <div>
+                <button onclick="showProductsToBeAdded()">Show products to be added</button><br>
+            </div>
             <div>
                 <label for="to">Transaction Id</label>
                 <input name="transactionId" id="transactionId" value="T1">
@@ -80,17 +90,12 @@
                 <input name="" id="customerId" value="C1">
             </div>
             <div>
-                <label for="to">Product to be added to Transaction</label>
-                <input name="" id="product" value="">
-            </div>
-            <div>
                 <button onclick="addTransaction()">Create Transaction</button><br>
                 <button onclick="getTransaction()">Get Transaction</button onclick="addTransaction()"><br>
                 <button onclick="getAllTransactions()">Get All Transactions</button onclick="addTransaction()"><br>
                 <button>Update Transaction</button><br>
                 <button onclick="deleteTransaction()">Delete Transaction</button onclick="getAllTransactions()"><br>
             </div>
-            
         </div>
         
     </main>

@@ -1,11 +1,15 @@
 * { margin:0; 
     padding:0; }
 
-div {
+div{
     /* margin: 5px; */
 }
 
 .spaceBottomLeft{
     margin-bottom: 20px;
     margin-left: 20px;
+}
+
+.border{
+    border: solid 1px;
 }
